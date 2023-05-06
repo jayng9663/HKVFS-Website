@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 li, a, button {
@@ -24,6 +25,7 @@ header {
 
 .background {
     background-image: url("../image/2023-01-01_193144.png");
+    background-repeat: no-repeat;
 }
 
 .logo {
@@ -57,22 +59,19 @@ button {
     background-color: rgba(0, 136, 169, 0.6);
 }
 
+.About_us {
+    padding: 25% 25%;
+    text-align: center;
+}
+
+.About_us h1 {
+    color: aliceblue;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 80px;
+}
+
 .About_us li {
     color: black;
-}
-
-@keyframes nav-load{
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.About_us {
-    padding: 20%;
 }
 
 .loader {
@@ -135,6 +134,17 @@ button {
 
     100% {
       height: 0%;
+    }
+}
+
+
+@keyframes nav-load{
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
