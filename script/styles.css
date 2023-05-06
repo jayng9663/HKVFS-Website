@@ -23,7 +23,7 @@ header {
 }
 
 .background {
-    background-image: url(/image/2023-01-01_193144.png);
+    background-image: url("../image/2023-01-01_193144.png");
 }
 
 .logo {
