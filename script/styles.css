@@ -20,12 +20,13 @@ header {
     padding: 15px 8%;
     background-color: rgb(37, 36, 36);
     background-position: 50% 42.5%;
-    animation: nav-load 400ms ease-in-out;
+    animation: nav-load 1s ease-in-out;
 }
 
 .background {
     background-image: url("../image/2023-01-01_193144.png");
     background-repeat: no-repeat;
+    background-position: center 0%;
 }
 
 .logo {
@@ -59,18 +60,24 @@ button {
     background-color: rgba(0, 136, 169, 0.6);
 }
 
-.About_us {
-    padding: 25% 25%;
+.Sign {
+    padding: 300px 50px;
     text-align: center;
 }
 
-.About_us h1 {
+.Sign h1 {
     color: aliceblue;
     font-family: "Ubuntu", sans-serif;
-    font-size: 80px;
+    font-size: 70px;
 }
 
-.About_us li {
+.Sign h2 {
+    color: aliceblue;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 60px;
+}
+
+.Sign li {
     color: black;
 }
 
