@@ -44,7 +44,7 @@ header {
 
 .background {
     background-image: url("../image/2023-01-01_193144.png");
-    background-repeat: no-repeat;
+    background-size: auto;
     background-position: center 0%;
 }
 
@@ -87,13 +87,13 @@ button {
 .Sign h1 {
     color: aliceblue;
     font-family: "Ubuntu", sans-serif;
-    font-size: 70px;
+    font-size: 80px;
 }
 
 .Sign h2 {
     color: aliceblue;
     font-family: "Ubuntu", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .Sign li {
@@ -102,6 +102,17 @@ button {
 
 .About_us {
     background-color: #363636;
+    height: 2000px;
+}
+
+@media screen and (max-width: 1500px) {
+    .Sign h1 {
+        font-size: 60px;
+    }
+
+    .Sing h2 {
+        font-size: 30px;
+    }
 }
 
 @keyframes loader {
@@ -160,6 +171,7 @@ button {
 }
 
 #overlay{
+    z-index: 1;
     height:100%;
     width:100%;
     background:rgb(40, 51, 58);
