@@ -7,7 +7,7 @@
 
 li, a, button {
     font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 25px;
     color: #ecf0f1;
     text-decoration: none;
@@ -48,11 +48,6 @@ header {
     background-position: center 0%;
 }
 
-.logo {
-    cursor: pointer;
-    margin-right: auto;
-}
-
 .nav_links {
     list-style: none;
 }
@@ -84,15 +79,16 @@ button {
     text-align: center;
 }
 
-.Sign h1 {
+.Sign h1,h2 {
     color: aliceblue;
     font-family: "Ubuntu", sans-serif;
+}
+
+.Sign h1 {
     font-size: 80px;
 }
 
 .Sign h2 {
-    color: aliceblue;
-    font-family: "Ubuntu", sans-serif;
     font-size: 50px;
 }
 
@@ -101,9 +97,25 @@ button {
 }
 
 .About_us {
-    background-color: #363636;
-    height: 2000px;
+    text-align: center;
+    padding: 5% 18%;
+    background-color: #4e85b3;
+    color: #ffffff;
+    height: 800px;
 }
+
+.About_us h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    margin: 30px 0%;
+}
+
+.About_us p1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+}
+
+
 
 @media screen and (max-width: 1500px) {
     .Sign h1 {
