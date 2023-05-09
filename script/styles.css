@@ -43,9 +43,11 @@ header {
 }
 
 .background {
-    background-image: url("../image/2023-01-01_193144.png");
+    background: url("../image/2023-01-01_193144.png");
     background-size: auto;
     background-position: center 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .nav_links {
@@ -75,12 +77,13 @@ button {
 }
 
 .Sign {
-    padding: 300px 50px;
+    padding: 15% 50px;
     text-align: center;
 }
 
 .Sign h1,h2 {
-    color: aliceblue;
+    animation: SignAlpha 1s ease-in-out;
+    color: rgba(240, 248, 255, 1);
     font-family: "Ubuntu", sans-serif;
 }
 
@@ -97,11 +100,11 @@ button {
 }
 
 .About_us {
+    z-index: 5;
+    padding: 400px 50px;
     text-align: center;
-    padding: 5% 18%;
-    background-color: #4e85b3;
+    background-color: rgb(78, 133, 179);
     color: #ffffff;
-    height: 800px;
 }
 
 .About_us h1 {
@@ -115,7 +118,93 @@ button {
     font-size: 25px;
 }
 
+.Join_Us {
+    background-color: rgb(241, 241, 241);
+    color: #000000;
+    text-align: center;
+}
 
+.Join_Us_text {
+    padding: 5% 15%;
+}
+
+.Join_Us_text h1 {
+    margin: 30px 0%;
+    font-size: 40px;
+}
+
+.Join_Us_text p1 {
+    font-size: 28px;
+}
+
+#Requirements_cards {
+    padding: 0% 0%;
+    display: flex;
+    align-items: center;
+}
+
+#Requirements_cards h1{
+    font-size: 50px;
+
+}
+
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: scroll-down-from-bottom 1s ease-in-out ;
+  }
+
+.scroll-down::before,
+.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+}
+
+@keyframes scroll-down-from-bottom {
+    0% {
+        color: rgba(0,0,0,0);
+    }
+
+    100% {
+        color: rgba(0,0,0,1);
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+  
 
 @media screen and (max-width: 1500px) {
     .Sign h1 {
@@ -179,6 +268,16 @@ button {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes SignAlpha {
+    0% {
+        color: rgba(240, 248, 255, 0);
+    }
+
+    100% {
+        color: rgba(240, 248, 255, 1);
     }
 }
 
