@@ -101,7 +101,7 @@ button {
 
 .About_us {
     z-index: 5;
-    padding: 400px 50px;
+    padding: 250px 300px;
     text-align: center;
     background-color: rgb(78, 133, 179);
     color: #ffffff;
@@ -122,19 +122,74 @@ button {
     background-color: rgb(241, 241, 241);
     color: #000000;
     text-align: center;
+    padding: 5% 12%;
+    background: url("../image/Falcon_BMS_1681632786.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.Join_Us_text {
-    padding: 5% 15%;
-}
-
-.Join_Us_text h1 {
-    margin: 30px 0%;
+.Join_Us h1 {
+    color: #ffffff;
+    margin: 20px 0%;
     font-size: 40px;
 }
 
-.Join_Us_text p1 {
-    font-size: 28px;
+.Join_Us h3 {
+    font-size: 30px;
+}
+
+.Join_Us h5 {
+    color: #ffffff;
+    margin: 35px 0%;
+    font-size: 40px;
+}
+
+.Join_Us p1 {
+    font-size: 25px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex;
+    --bs-gutter-x: 40px;
+}
+
+.row>* {
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.col {
+    width: 33.33333333%;
+}
+
+.card {
+    color: #ffffff;
+    word-wrap: break-word;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(94, 89, 89, 0.9);
+    background-clip: border-box;
+    border-radius: 5px;
+}
+
+.card-header {
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: rgba(110, 102, 102, 0.8);
+    border-bottom: 1px solid #000000;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    margin: 3% 2%;
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
 }
 
 #Requirements_cards {
