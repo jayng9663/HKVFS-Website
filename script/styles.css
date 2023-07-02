@@ -441,3 +441,56 @@ button {
     left:0;
     top:0;
 }
+
+#gallery{
+    background-color: rgb(75, 75, 75);
+}
+
+.img-gallery {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 25px 18px;
+    padding: 25px 0px;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.img-gallery img:hover {
+    transform: scale(0.95);
+    box-shadow: 0 10px 35px #00000062;
+    border-radius: 8px;
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.full-img img {
+    width: 90%;
+    max-height: 95%;
+}
+
+.full-img span {
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    font-size: 35px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}

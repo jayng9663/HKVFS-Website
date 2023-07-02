@@ -1,3 +1,5 @@
+// Index
+
 var overlay = document.getElementById("overlay");
 var windowHeight  = window.innerHeight;
 
@@ -13,3 +15,19 @@ $(document).ready(function() {
     alert('Your window width is too small, please use a wider device to view HKVFS page.');
   }
 })
+
+// Gallery
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(name) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = name;
+    navbar.style.display = "none";
+}
+
+function closeFullImg() {
+    fullImgBox.style.display = "none";
+    navbar.style.display = "";
+}
