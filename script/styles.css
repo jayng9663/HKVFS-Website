@@ -8,7 +8,7 @@
 li, a, button {
     font-family: "Ubuntu", sans-serif;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 30px;
     color: #ecf0f1;
     text-decoration: none;
 }
@@ -18,7 +18,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 15px 5%;
-    background-color: rgb(37, 36, 36);
+    background-color: rgba(37, 36, 36, 0.5);
     background-position: 50% 42.5%;
     animation: nav-load 1s ease-in-out;
 }
@@ -42,7 +42,7 @@ header {
     animation: loader-inner 2s infinite ease-in;
 }
 
-.background {
+#background {
     background: url("../image/2023-01-01_193144.png");
     background-size: auto;
     background-position: center 0%;
@@ -76,49 +76,58 @@ button {
     background-color: rgba(0, 136, 169, 0.6);
 }
 
-.Sign {
-    padding: 15% 50px;
+#Sign {
+    height: 700px;
+    padding: 5% 50px;
     text-align: center;
 }
 
-.Sign h1,h2 {
+#Sign h1,h2 {
     animation: SignAlpha 1s ease-in-out;
     color: rgba(240, 248, 255, 1);
     font-family: "Ubuntu", sans-serif;
 }
 
-.Sign h1 {
+#Sign h1 {
     font-size: 80px;
 }
 
-.Sign h2 {
+#Sign h2 {
     font-size: 50px;
 }
 
-.Sign li {
+#Sign li {
     color: black;
 }
 
-.About_us {
-    z-index: 5;
-    padding: 250px 300px;
+#About_us {
+    position: relative;
+    height: 800px;
+    padding: 5%;
     text-align: center;
-    background-color: rgb(78, 133, 179);
     color: #ffffff;
+    background-color: rgb(75, 75, 75);
 }
 
-.About_us h1 {
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#About_us h1 {
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     margin: 30px 0%;
 }
 
-.About_us p1 {
+#About_us p1 {
     font-family: "Roboto", sans-serif;
     font-size: 25px;
 }
 
-.Join_Us {
+#Join_Us {
     background-color: rgb(241, 241, 241);
     color: #000000;
     text-align: center;
@@ -129,23 +138,23 @@ button {
     background-attachment: fixed;
 }
 
-.Join_Us h1 {
+#Join_Us h1 {
     color: #ffffff;
     margin: 20px 0%;
     font-size: 40px;
 }
 
-.Join_Us h3 {
+#Join_Us h3 {
     font-size: 30px;
 }
 
-.Join_Us h5 {
+#Join_Us h5 {
     color: #ffffff;
     margin: 35px 0%;
     font-size: 40px;
 }
 
-.Join_Us p1 {
+#Join_Us p1 {
     font-size: 25px;
 }
 
@@ -192,6 +201,11 @@ button {
     padding: 1rem 1rem;
 }
 
+.discord {
+    margin: 35px 20px;
+    text-align: left;
+}
+
 #Requirements_cards {
     padding: 0% 0%;
     display: flex;
@@ -234,6 +248,81 @@ button {
     animation-delay: 0.3s;
 }
 
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover {
+    transform:scale(1.1); -webkit-transform:scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+    text-decoration:underline;
+}
+
 @keyframes scroll-down-from-bottom {
     0% {
         color: rgba(0,0,0,0);
@@ -262,11 +351,11 @@ button {
   
 
 @media screen and (max-width: 1500px) {
-    .Sign h1 {
+    #Sign h1 {
         font-size: 60px;
     }
 
-    .Sing h2 {
+    #Sign h2 {
         font-size: 30px;
     }
 }
@@ -316,7 +405,7 @@ button {
 }
 
 
-@keyframes nav-load{
+@keyframes nav-load {
     0% {
         transform: translateY(-100%);
     }
@@ -336,7 +425,7 @@ button {
     }
 }
 
-#overlay{
+#overlay {
     z-index: 1;
     height:100%;
     width:100%;
