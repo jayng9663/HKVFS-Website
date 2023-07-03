@@ -12,7 +12,7 @@ window.addEventListener('load', function(){
 $(document).ready(function() {
   var width = $(window).width();
   if (width < 1000){
-    alert('Your window width is too small, please use a wider device to view HKVFS page.');
+    alert('Your window width are too small, please use a wider device to view HKVFS page.');
   }
 })
 
